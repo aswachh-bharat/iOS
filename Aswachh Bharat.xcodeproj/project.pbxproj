@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC49BDF1D4E479D00204E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */; };
+		0DC49BE11D4E479D00204E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BE01D4E479D00204E22 /* ViewController.swift */; };
+		0DC49BE41D4E479D00204E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE21D4E479D00204E22 /* Main.storyboard */; };
+		0DC49BE61D4E479D00204E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE51D4E479D00204E22 /* Assets.xcassets */; };
+		0DC49BE91D4E479D00204E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */; };
+		0DC49BF41D4E479D00204E22 /* Aswachh_BharatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BF31D4E479D00204E22 /* Aswachh_BharatTests.swift */; };
+		0DC49BFF1D4E479D00204E22 /* Aswachh_BharatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DC49BF01D4E479D00204E22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DC49BD31D4E479D00204E22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DC49BDA1D4E479D00204E22;
+			remoteInfo = "Aswachh Bharat";
+		};
+		0DC49BFB1D4E479D00204E22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DC49BD31D4E479D00204E22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DC49BDA1D4E479D00204E22;
+			remoteInfo = "Aswachh Bharat";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DC49BDB1D4E479D00204E22 /* Aswachh Bharat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aswachh Bharat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0DC49BE01D4E479D00204E22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DC49BE31D4E479D00204E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DC49BE51D4E479D00204E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DC49BE81D4E479D00204E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0DC49BEA1D4E479D00204E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC49BEF1D4E479D00204E22 /* Aswachh BharatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aswachh BharatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC49BF31D4E479D00204E22 /* Aswachh_BharatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aswachh_BharatTests.swift; sourceTree = "<group>"; };
+		0DC49BF51D4E479D00204E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC49BFA1D4E479D00204E22 /* Aswachh BharatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aswachh BharatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aswachh_BharatUITests.swift; sourceTree = "<group>"; };
+		0DC49C001D4E479D00204E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DC49BD81D4E479D00204E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC49BEC1D4E479D00204E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC49BF71D4E479D00204E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC49BD21D4E479D00204E22 = {
+			isa = PBXGroup;
+			children = (
+				0DC49BDD1D4E479D00204E22 /* Aswachh Bharat */,
+				0DC49BF21D4E479D00204E22 /* Aswachh BharatTests */,
+				0DC49BFD1D4E479D00204E22 /* Aswachh BharatUITests */,
+				0DC49BDC1D4E479D00204E22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DC49BDC1D4E479D00204E22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BDB1D4E479D00204E22 /* Aswachh Bharat.app */,
+				0DC49BEF1D4E479D00204E22 /* Aswachh BharatTests.xctest */,
+				0DC49BFA1D4E479D00204E22 /* Aswachh BharatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DC49BDD1D4E479D00204E22 /* Aswachh Bharat */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */,
+				0DC49BE01D4E479D00204E22 /* ViewController.swift */,
+				0DC49BE21D4E479D00204E22 /* Main.storyboard */,
+				0DC49BE51D4E479D00204E22 /* Assets.xcassets */,
+				0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */,
+				0DC49BEA1D4E479D00204E22 /* Info.plist */,
+			);
+			path = "Aswachh Bharat";
+			sourceTree = "<group>";
+		};
+		0DC49BF21D4E479D00204E22 /* Aswachh BharatTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BF31D4E479D00204E22 /* Aswachh_BharatTests.swift */,
+				0DC49BF51D4E479D00204E22 /* Info.plist */,
+			);
+			path = "Aswachh BharatTests";
+			sourceTree = "<group>";
+		};
+		0DC49BFD1D4E479D00204E22 /* Aswachh BharatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */,
+				0DC49C001D4E479D00204E22 /* Info.plist */,
+			);
+			path = "Aswachh BharatUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DC49BDA1D4E479D00204E22 /* Aswachh Bharat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC49C031D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh Bharat" */;
+			buildPhases = (
+				0DC49BD71D4E479D00204E22 /* Sources */,
+				0DC49BD81D4E479D00204E22 /* Frameworks */,
+				0DC49BD91D4E479D00204E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aswachh Bharat";
+			productName = "Aswachh Bharat";
+			productReference = 0DC49BDB1D4E479D00204E22 /* Aswachh Bharat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DC49BEE1D4E479D00204E22 /* Aswachh BharatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC49C061D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh BharatTests" */;
+			buildPhases = (
+				0DC49BEB1D4E479D00204E22 /* Sources */,
+				0DC49BEC1D4E479D00204E22 /* Frameworks */,
+				0DC49BED1D4E479D00204E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DC49BF11D4E479D00204E22 /* PBXTargetDependency */,
+			);
+			name = "Aswachh BharatTests";
+			productName = "Aswachh BharatTests";
+			productReference = 0DC49BEF1D4E479D00204E22 /* Aswachh BharatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0DC49BF91D4E479D00204E22 /* Aswachh BharatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DC49C091D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh BharatUITests" */;
+			buildPhases = (
+				0DC49BF61D4E479D00204E22 /* Sources */,
+				0DC49BF71D4E479D00204E22 /* Frameworks */,
+				0DC49BF81D4E479D00204E22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DC49BFC1D4E479D00204E22 /* PBXTargetDependency */,
+			);
+			name = "Aswachh BharatUITests";
+			productName = "Aswachh BharatUITests";
+			productReference = 0DC49BFA1D4E479D00204E22 /* Aswachh BharatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DC49BD31D4E479D00204E22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = devup;
+				TargetAttributes = {
+					0DC49BDA1D4E479D00204E22 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0DC49BEE1D4E479D00204E22 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0DC49BDA1D4E479D00204E22;
+					};
+					0DC49BF91D4E479D00204E22 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0DC49BDA1D4E479D00204E22;
+					};
+				};
+			};
+			buildConfigurationList = 0DC49BD61D4E479D00204E22 /* Build configuration list for PBXProject "Aswachh Bharat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DC49BD21D4E479D00204E22;
+			productRefGroup = 0DC49BDC1D4E479D00204E22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DC49BDA1D4E479D00204E22 /* Aswachh Bharat */,
+				0DC49BEE1D4E479D00204E22 /* Aswachh BharatTests */,
+				0DC49BF91D4E479D00204E22 /* Aswachh BharatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DC49BD91D4E479D00204E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC49BE91D4E479D00204E22 /* LaunchScreen.storyboard in Resources */,
+				0DC49BE61D4E479D00204E22 /* Assets.xcassets in Resources */,
+				0DC49BE41D4E479D00204E22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC49BED1D4E479D00204E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC49BF81D4E479D00204E22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DC49BD71D4E479D00204E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC49BE11D4E479D00204E22 /* ViewController.swift in Sources */,
+				0DC49BDF1D4E479D00204E22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC49BEB1D4E479D00204E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC49BF41D4E479D00204E22 /* Aswachh_BharatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC49BF61D4E479D00204E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC49BFF1D4E479D00204E22 /* Aswachh_BharatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DC49BF11D4E479D00204E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DC49BDA1D4E479D00204E22 /* Aswachh Bharat */;
+			targetProxy = 0DC49BF01D4E479D00204E22 /* PBXContainerItemProxy */;
+		};
+		0DC49BFC1D4E479D00204E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DC49BDA1D4E479D00204E22 /* Aswachh Bharat */;
+			targetProxy = 0DC49BFB1D4E479D00204E22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DC49BE21D4E479D00204E22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC49BE31D4E479D00204E22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DC49BE81D4E479D00204E22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DC49C011D4E479D00204E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DC49C021D4E479D00204E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DC49C041D4E479D00204E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Aswachh Bharat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-Bharat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0DC49C051D4E479D00204E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Aswachh Bharat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-Bharat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0DC49C071D4E479D00204E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Aswachh BharatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-BharatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aswachh Bharat.app/Aswachh Bharat";
+			};
+			name = Debug;
+		};
+		0DC49C081D4E479D00204E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Aswachh BharatTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-BharatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aswachh Bharat.app/Aswachh Bharat";
+			};
+			name = Release;
+		};
+		0DC49C0A1D4E479D00204E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Aswachh BharatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-BharatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Aswachh Bharat";
+			};
+			name = Debug;
+		};
+		0DC49C0B1D4E479D00204E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Aswachh BharatUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-BharatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Aswachh Bharat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DC49BD61D4E479D00204E22 /* Build configuration list for PBXProject "Aswachh Bharat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC49C011D4E479D00204E22 /* Debug */,
+				0DC49C021D4E479D00204E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DC49C031D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh Bharat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC49C041D4E479D00204E22 /* Debug */,
+				0DC49C051D4E479D00204E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0DC49C061D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh BharatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC49C071D4E479D00204E22 /* Debug */,
+				0DC49C081D4E479D00204E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0DC49C091D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh BharatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DC49C0A1D4E479D00204E22 /* Debug */,
+				0DC49C0B1D4E479D00204E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DC49BD31D4E479D00204E22 /* Project object */;
+}
