@@ -14,6 +14,8 @@
 		0DC49BE91D4E479D00204E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */; };
 		0DC49BF41D4E479D00204E22 /* Aswachh_BharatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BF31D4E479D00204E22 /* Aswachh_BharatTests.swift */; };
 		0DC49BFF1D4E479D00204E22 /* Aswachh_BharatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */; };
+		0DC49C0F1D4E4AA200204E22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */; };
+		0DC49C101D4E4AA200204E22 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0DC49C111D4E4AA200204E22 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0DC49C101D4E4AA200204E22 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0DC49BDB1D4E479D00204E22 /* Aswachh Bharat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aswachh Bharat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,8 @@
 		0DC49BFA1D4E479D00204E22 /* Aswachh BharatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aswachh BharatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aswachh_BharatUITests.swift; sourceTree = "<group>"; };
 		0DC49C001D4E479D00204E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC49C0C1D4E4A9700204E22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DC49C0F1D4E4AA200204E22 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +96,8 @@
 		0DC49BD21D4E479D00204E22 = {
 			isa = PBXGroup;
 			children = (
+				0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */,
+				0DC49C0C1D4E4A9700204E22 /* Alamofire.framework */,
 				0DC49BDD1D4E479D00204E22 /* Aswachh Bharat */,
 				0DC49BF21D4E479D00204E22 /* Aswachh BharatTests */,
 				0DC49BFD1D4E479D00204E22 /* Aswachh BharatUITests */,
@@ -135,6 +156,7 @@
 				0DC49BD71D4E479D00204E22 /* Sources */,
 				0DC49BD81D4E479D00204E22 /* Frameworks */,
 				0DC49BD91D4E479D00204E22 /* Resources */,
+				0DC49C111D4E4AA200204E22 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -401,6 +423,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Aswachh Bharat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-Bharat";
@@ -412,6 +438,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Aswachh Bharat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "in.devup.Aswachh-Bharat";
@@ -484,6 +514,7 @@
 				0DC49C051D4E479D00204E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DC49C061D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh BharatTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +523,7 @@
 				0DC49C081D4E479D00204E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DC49C091D4E479D00204E22 /* Build configuration list for PBXNativeTarget "Aswachh BharatUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +532,7 @@
 				0DC49C0B1D4E479D00204E22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
