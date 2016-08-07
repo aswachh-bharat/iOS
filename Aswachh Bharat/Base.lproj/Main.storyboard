@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vjz-rs-3GQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Aswachh Bharat-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Aswachh_Bharat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ShowImagesViewController" customModule="Aswachh_Bharat" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +16,86 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="280" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3r8-D4-xJG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="images" rowHeight="280" id="9E0-MK-fj7" customClass="ImageTableViewCell" customModule="Aswachh_Bharat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="280"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9E0-MK-fj7" id="vwW-xA-6ZY">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="279.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uye-Yk-YIZ">
+                                                    <rect key="frame" x="16" y="-42" width="584" height="265.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-cz-i9Y">
+                                                    <rect key="frame" x="16" y="243" width="584" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Uye-Yk-YIZ" secondAttribute="trailing" id="Fbz-Ko-oLQ"/>
+                                                <constraint firstItem="Uye-Yk-YIZ" firstAttribute="leading" secondItem="vwW-xA-6ZY" secondAttribute="leading" id="GZZ-lC-KEN"/>
+                                                <constraint firstAttribute="bottom" secondItem="PaG-cz-i9Y" secondAttribute="bottom" id="GaP-hi-nfY"/>
+                                                <constraint firstItem="PaG-cz-i9Y" firstAttribute="top" secondItem="Uye-Yk-YIZ" secondAttribute="bottom" constant="19.5" id="KEG-sB-xFJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="PaG-cz-i9Y" secondAttribute="trailing" id="Mqm-NO-nbn"/>
+                                                <constraint firstItem="Uye-Yk-YIZ" firstAttribute="top" secondItem="vwW-xA-6ZY" secondAttribute="top" constant="10" id="TmP-Pe-78K"/>
+                                                <constraint firstItem="PaG-cz-i9Y" firstAttribute="leading" secondItem="vwW-xA-6ZY" secondAttribute="leading" id="fi9-wa-UuM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="location" destination="PaG-cz-i9Y" id="DVW-Lh-kEc"/>
+                                            <outlet property="mainImageView" destination="Uye-Yk-YIZ" id="UM5-yj-3DG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YjH-1F-ESO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dSf-9F-arU"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3r8-D4-xJG" secondAttribute="trailing" id="3OF-ic-ez1"/>
+                            <constraint firstItem="3r8-D4-xJG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XRX-Ya-obU"/>
+                            <constraint firstAttribute="bottom" secondItem="3r8-D4-xJG" secondAttribute="bottom" id="eyO-Cj-jFw"/>
+                            <constraint firstItem="3r8-D4-xJG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lD3-7s-pux"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Aswachh Bharat" id="haY-7j-HiY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wVf-xc-ECe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3r8-D4-xJG" id="8TX-EW-mM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1057" y="322"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x4O-h7-ed5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vjz-rs-3GQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Ur-2X-F3P">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="O6d-jA-RUh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bl3-g3-3Z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="322"/>
         </scene>
     </scenes>
 </document>

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DC49BDF1D4E479D00204E22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */; };
-		0DC49BE11D4E479D00204E22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BE01D4E479D00204E22 /* ViewController.swift */; };
+		0DC49BE11D4E479D00204E22 /* ShowImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BE01D4E479D00204E22 /* ShowImagesViewController.swift */; };
 		0DC49BE41D4E479D00204E22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE21D4E479D00204E22 /* Main.storyboard */; };
 		0DC49BE61D4E479D00204E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE51D4E479D00204E22 /* Assets.xcassets */; };
 		0DC49BE91D4E479D00204E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */; };
@@ -16,6 +16,15 @@
 		0DC49BFF1D4E479D00204E22 /* Aswachh_BharatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */; };
 		0DC49C0F1D4E4AA200204E22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */; };
 		0DC49C101D4E4AA200204E22 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		529C4A7B1D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */; };
+		529C4A7C1D57183A005762A4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A791D57183A005762A4 /* SwiftyJSON.framework */; };
+		529C4A801D571847005762A4 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		529C4A821D571847005762A4 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A791D57183A005762A4 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		529C4A831D573366005762A4 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A771D57183A005762A4 /* AlamofireImage.framework */; };
+		529C4A841D573366005762A4 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A771D57183A005762A4 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		529C4A871D5738D8005762A4 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C4A861D5738D8005762A4 /* ImageTableViewCell.swift */; };
+		52D85D221D559CE800AE5565 /* ImageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D85D211D559CE800AE5565 /* ImageRouter.swift */; };
+		52D85D241D559D7400AE5565 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D85D231D559D7400AE5565 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +51,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				529C4A821D571847005762A4 /* SwiftyJSON.framework in Embed Frameworks */,
 				0DC49C101D4E4AA200204E22 /* Alamofire.framework in Embed Frameworks */,
+				529C4A801D571847005762A4 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */,
+				529C4A841D573366005762A4 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +64,7 @@
 /* Begin PBXFileReference section */
 		0DC49BDB1D4E479D00204E22 /* Aswachh Bharat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aswachh Bharat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DC49BE01D4E479D00204E22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DC49BE01D4E479D00204E22 /* ShowImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImagesViewController.swift; sourceTree = "<group>"; };
 		0DC49BE31D4E479D00204E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DC49BE51D4E479D00204E22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DC49BE81D4E479D00204E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +77,12 @@
 		0DC49C001D4E479D00204E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC49C0C1D4E4A9700204E22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		529C4A771D57183A005762A4 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityIndicator.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework; sourceTree = "<group>"; };
+		529C4A791D57183A005762A4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		529C4A861D5738D8005762A4 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		52D85D211D559CE800AE5565 /* ImageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRouter.swift; sourceTree = "<group>"; };
+		52D85D231D559D7400AE5565 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529C4A7B1D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework in Frameworks */,
+				529C4A7C1D57183A005762A4 /* SwiftyJSON.framework in Frameworks */,
 				0DC49C0F1D4E4AA200204E22 /* Alamofire.framework in Frameworks */,
+				529C4A831D573366005762A4 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +117,9 @@
 		0DC49BD21D4E479D00204E22 = {
 			isa = PBXGroup;
 			children = (
+				529C4A771D57183A005762A4 /* AlamofireImage.framework */,
+				529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */,
+				529C4A791D57183A005762A4 /* SwiftyJSON.framework */,
 				0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */,
 				0DC49C0C1D4E4A9700204E22 /* Alamofire.framework */,
 				0DC49BDD1D4E479D00204E22 /* Aswachh Bharat */,
@@ -118,12 +142,12 @@
 		0DC49BDD1D4E479D00204E22 /* Aswachh Bharat */ = {
 			isa = PBXGroup;
 			children = (
-				0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */,
-				0DC49BE01D4E479D00204E22 /* ViewController.swift */,
-				0DC49BE21D4E479D00204E22 /* Main.storyboard */,
+				52D85D251D559F3300AE5565 /* Common */,
+				52D85D201D559C5200AE5565 /* Views */,
+				52D85D1F1D559C3900AE5565 /* ViewControllers */,
+				52B3BD281D559A07000CE404 /* Api */,
+				52B3BD271D5599ED000CE404 /* Application */,
 				0DC49BE51D4E479D00204E22 /* Assets.xcassets */,
-				0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */,
-				0DC49BEA1D4E479D00204E22 /* Info.plist */,
 			);
 			path = "Aswachh Bharat";
 			sourceTree = "<group>";
@@ -144,6 +168,49 @@
 				0DC49C001D4E479D00204E22 /* Info.plist */,
 			);
 			path = "Aswachh BharatUITests";
+			sourceTree = "<group>";
+		};
+		52B3BD271D5599ED000CE404 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BDE1D4E479D00204E22 /* AppDelegate.swift */,
+				0DC49BEA1D4E479D00204E22 /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		52B3BD281D559A07000CE404 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				52D85D211D559CE800AE5565 /* ImageRouter.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		52D85D1F1D559C3900AE5565 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BE01D4E479D00204E22 /* ShowImagesViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		52D85D201D559C5200AE5565 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DC49BE21D4E479D00204E22 /* Main.storyboard */,
+				0DC49BE71D4E479D00204E22 /* LaunchScreen.storyboard */,
+				529C4A861D5738D8005762A4 /* ImageTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		52D85D251D559F3300AE5565 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				52D85D231D559D7400AE5565 /* Constants.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DC49BE11D4E479D00204E22 /* ViewController.swift in Sources */,
+				0DC49BE11D4E479D00204E22 /* ShowImagesViewController.swift in Sources */,
+				52D85D221D559CE800AE5565 /* ImageRouter.swift in Sources */,
+				529C4A871D5738D8005762A4 /* ImageTableViewCell.swift in Sources */,
 				0DC49BDF1D4E479D00204E22 /* AppDelegate.swift in Sources */,
+				52D85D241D559D7400AE5565 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

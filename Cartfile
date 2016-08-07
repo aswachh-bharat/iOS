@@ -1,1 +1,4 @@
 github "Alamofire/Alamofire" ~> 3.4
+github "Alamofire/AlamofireImage" ~> 2.0
+github "Alamofire/AlamofireNetworkActivityIndicator" ~> 1.0
+github "SwiftyJSON/SwiftyJSON"
