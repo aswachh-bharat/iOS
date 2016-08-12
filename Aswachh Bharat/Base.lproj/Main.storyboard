@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Aswachh Bharat-->
@@ -28,13 +29,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="279.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uye-Yk-YIZ">
-                                                    <rect key="frame" x="16" y="-42" width="584" height="265.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uye-Yk-YIZ">
+                                                    <rect key="frame" x="0.0" y="10" width="600" height="250"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-cz-i9Y">
-                                                    <rect key="frame" x="16" y="243" width="584" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-cz-i9Y">
+                                                    <rect key="frame" x="0.0" y="279" width="600" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -69,7 +70,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Aswachh Bharat" id="haY-7j-HiY">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wVf-xc-ECe"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wVf-xc-ECe">
+                            <connections>
+                                <segue destination="QVd-kx-reY" kind="show" id="4t2-c7-Ndk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3r8-D4-xJG" id="8TX-EW-mM8"/>
@@ -77,7 +82,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="322"/>
+            <point key="canvasLocation" x="995" y="336"/>
+        </scene>
+        <!--Upload Image-->
+        <scene sceneID="zkC-dV-iNH">
+            <objects>
+                <viewController id="QVd-kx-reY" customClass="UploadImageViewController" customModule="Aswachh_Bharat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mkc-mT-3M9"/>
+                        <viewControllerLayoutGuide type="bottom" id="zlw-12-dhb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GRl-2W-ZHe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="WrP-r2-c99">
+                                <rect key="frame" x="0.0" y="104" width="600" height="320"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WrP-r2-c99" secondAttribute="height" multiplier="15:8" id="WVD-PZ-Iym"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="oli-3N-aXx" appends="YES" id="eAe-yT-oGl"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updating Location..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqV-ce-7BC">
+                                <rect key="frame" x="0.0" y="474" width="600" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5dI-xc-4rP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WrP-r2-c99" firstAttribute="leading" secondItem="GRl-2W-ZHe" secondAttribute="leading" id="8YE-yK-yq3"/>
+                            <constraint firstItem="OqV-ce-7BC" firstAttribute="centerX" secondItem="GRl-2W-ZHe" secondAttribute="centerX" id="9nY-9x-C5Y"/>
+                            <constraint firstItem="OqV-ce-7BC" firstAttribute="width" secondItem="GRl-2W-ZHe" secondAttribute="width" id="R60-ix-2jH"/>
+                            <constraint firstItem="WrP-r2-c99" firstAttribute="centerX" secondItem="GRl-2W-ZHe" secondAttribute="centerX" id="c6p-kF-wns"/>
+                            <constraint firstItem="OqV-ce-7BC" firstAttribute="top" secondItem="WrP-r2-c99" secondAttribute="bottom" constant="50" id="gCY-M4-W7o"/>
+                            <constraint firstAttribute="trailing" secondItem="WrP-r2-c99" secondAttribute="trailing" id="iG2-19-kTm"/>
+                            <constraint firstItem="WrP-r2-c99" firstAttribute="top" secondItem="Mkc-mT-3M9" secondAttribute="bottom" constant="40" id="jX1-Za-UoJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload Image" id="bYg-3N-qNt">
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="rJ1-Uy-Xf3">
+                            <connections>
+                                <action selector="upload:" destination="QVd-kx-reY" id="4ap-Il-fXN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="WrP-r2-c99" id="I8H-yZ-eYW"/>
+                        <outlet property="locationLabel" destination="OqV-ce-7BC" id="JpO-g9-CMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrH-q9-Xja" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oli-3N-aXx">
+                    <connections>
+                        <action selector="openCameraButton:" destination="QVd-kx-reY" id="KIX-Wv-94v"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1677" y="327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="x4O-h7-ed5">
@@ -98,4 +167,7 @@
             <point key="canvasLocation" x="245" y="322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Plus" width="236" height="236"/>
+    </resources>
 </document>

@@ -14,12 +14,25 @@ import SwiftyJSON
 class ShowImagesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var tableView:UITableView?
+    let refreshControl:UIRefreshControl = UIRefreshControl()
     
     var images:JSON? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        refreshControl.backgroundColor = UIColor.clearColor()
+        refreshControl.tintColor = UIColor.blackColor()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        
+        refreshControl.addTarget(self, action: #selector(ShowImagesViewController.loadData), forControlEvents: UIControlEvents.ValueChanged)
+        
+        self.tableView!.addSubview(refreshControl)
+        
+        loadData()
+    }
+    
+    func loadData() {
         _ = Alamofire.request(ImageRouter.All)
             .responseJSON { response in
                 guard response.result.error == nil else {
@@ -31,6 +44,7 @@ class ShowImagesViewController: UIViewController, UITableViewDataSource, UITable
                 if let value: AnyObject = response.result.value {
                     self.images = JSON(value)
                     self.tableView!.reloadData()
+                    self.refreshControl.endRefreshing()
                 }
         }
     }

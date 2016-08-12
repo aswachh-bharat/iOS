@@ -16,6 +16,7 @@
 		0DC49BFF1D4E479D00204E22 /* Aswachh_BharatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC49BFE1D4E479D00204E22 /* Aswachh_BharatUITests.swift */; };
 		0DC49C0F1D4E4AA200204E22 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */; };
 		0DC49C101D4E4AA200204E22 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		523BDF581D5D894B00D43864 /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BDF571D5D894A00D43864 /* UploadImageViewController.swift */; };
 		529C4A7B1D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */; };
 		529C4A7C1D57183A005762A4 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A791D57183A005762A4 /* SwiftyJSON.framework */; };
 		529C4A801D571847005762A4 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -77,6 +78,7 @@
 		0DC49C001D4E479D00204E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DC49C0C1D4E4A9700204E22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0DC49C0E1D4E4AA200204E22 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		523BDF571D5D894A00D43864 /* UploadImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
 		529C4A771D57183A005762A4 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		529C4A781D57183A005762A4 /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityIndicator.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework; sourceTree = "<group>"; };
 		529C4A791D57183A005762A4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		52D85D1F1D559C3900AE5565 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				523BDF571D5D894A00D43864 /* UploadImageViewController.swift */,
 				0DC49BE01D4E479D00204E22 /* ShowImagesViewController.swift */,
 			);
 			name = ViewControllers;
@@ -350,6 +353,7 @@
 				529C4A871D5738D8005762A4 /* ImageTableViewCell.swift in Sources */,
 				0DC49BDF1D4E479D00204E22 /* AppDelegate.swift in Sources */,
 				52D85D241D559D7400AE5565 /* Constants.swift in Sources */,
+				523BDF581D5D894B00D43864 /* UploadImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

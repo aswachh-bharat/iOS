@@ -6,7 +6,7 @@
 //  Copyright © 2016 devup. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 
 enum ImageRouter : URLRequestConvertible {
@@ -15,12 +15,15 @@ enum ImageRouter : URLRequestConvertible {
     
     case All
     case Get(Int)
+    case Upload
     
     var URLRequest: NSMutableURLRequest {
         var method: Alamofire.Method {
             switch self {
             case .Get:
                 return .GET
+            case .Upload:
+                return .POST
             default:
                 return .GET
             }
@@ -30,12 +33,14 @@ enum ImageRouter : URLRequestConvertible {
             switch self {
             case .Get(_):
                 return nil
+            case .Upload:
+                return nil
             default:
                 return nil
             }
         }()
         
-        let url:NSURL = {
+        let url: NSURL = {
             // build up and return the URL for each endpoint
             let relativePath:String?
             switch self {
@@ -52,9 +57,23 @@ enum ImageRouter : URLRequestConvertible {
             return URL
         }()
         
-        let URLRequest = NSMutableURLRequest(URL: url)
+        let URLRequest: NSURLRequest = {
+            let mutableURLRequest = NSMutableURLRequest(URL: url)
+            
+            switch self {
+            default:
+                return mutableURLRequest
+            }
+            
+        }()
         
-        let encoding = Alamofire.ParameterEncoding.JSON
+        let encoding: ParameterEncoding = {
+            switch self {
+            default:
+                return Alamofire.ParameterEncoding.URL
+            }
+        }()
+        
         let (encodedRequest, _) = encoding.encode(URLRequest, parameters: params)
         
         encodedRequest.HTTPMethod = method.rawValue
